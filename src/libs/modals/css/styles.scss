@@ -1,0 +1,74 @@
+.modal {
+  padding: 0 40px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal__wrapper {
+  position: relative;
+  max-width: 640px;
+  padding: 10px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.modal__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  right: -32px;
+  top: -32px;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+}
+
+.modal__close::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  transform: rotate(-45deg);
+}
+
+.modal__close::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #000;
+  transform: rotate(45deg);
+}
+
+.modal__close:hover {
+  background: #fff;
+}
+
+.dn {
+  display: none !important;
+}
+
+.scn {
+  overflow-y: hidden;
+  padding-right: 17px;
+}
